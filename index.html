@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi Pastel | Empanadas & Gatitos</title>
+    <!-- Fuente tierna de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Icono de patita para la pestaña -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+</head>
+<body>
+
+    <!-- Fondo de patitas flotantes -->
+    <div class="bg-paws"></div>
+
+    <!-- Reproductor de Música -->
+    <div class="music-player">
+        <span>🎵 Música Suave</span>
+        <audio id="bg-music" loop>
+            <!-- REEMPLAZA 'musica.mp3' CON TU ARCHIVO DE AUDIO -->
+            <source src="musica.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+        </audio>
+        <button onclick="toggleMusic()" id="music-btn">▶ Play</button>
+    </div>
+
+    <header>
+        <!-- AQUÍ VA TU LOGO: Reemplaza 'logo.png' con tu archivo -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Mochi Pastel" class="logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/616/616430.png'">
+        </div>
+        <h1>Mochi Pastel</h1>
+        <p>Las empanadas más tiernas y deliciosas 🐱🥟</p>
+    </header>
+
+    <main>
+        <!-- Sección de Bienvenida -->
+        <section class="hero">
+            <div class="cat-decoration">
+                <img src="https://placekitten.com/300/300" alt="Gatito tierno">
+            </div>
+            <div class="welcome-text">
+                <h2>¡Bienvenido Karen!</h2>
+                <p>Nuestras empanadas están hechas con mucho amor y aprobadas por michis.</p>
+                <a href="#menu" class="btn">Ver Menú 🐾</a>
+            </div>
+        </section>
+
+        <!-- Sección del Menú -->
+        <section id="menu" class="menu-section">
+            <h2>🥟 Nuestro Menú</h2>
+            <div class="menu-grid">
+                <!-- Producto 1 -->
+                <div class="card">
+                    <img src="https://placekitten.com/200/200" alt="Empanada de Carne"> <!-- Pon foto de empanada aqui -->
+                    <h3>Empanada de Carne</h3>
+                    <p>Jugosa y calientita.</p>
+                    <span class="price">$1.50</span>
+                    <button class="buy-btn">Pedir 🐾</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="card">
+                    <img src="https://placekitten.com/201/201" alt="Empanada de Pollo">
+                    <h3>Empanada de Pollo</h3>
+                    <p>Con la receta secreta.</p>
+                    <span class="price">$1.50</span>
+                    <button class="buy-btn">Pedir 🐾</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="card">
+                    <img src="https://placekitten.com/202/202" alt="Empanada de Queso">
+                    <h3>Empanada de Queso</h3>
+                    <p>Mucho queso derretido.</p>
+                    <span class="price">$1.20</span>
+                    <button class="buy-btn">Pedir 🐾</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="cat-footer">
+            <img src="https://placekitten.com/100/100" alt="Gatito footer">
+        </div>
+        <p>© 2024 Mochi Pastel - Hecho con 🐾 y ❤️</p>
+        <div class="socials">
+            <a href="#">Instagram</a> | <a href="#">WhatsApp</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
